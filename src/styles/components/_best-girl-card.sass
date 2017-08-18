@@ -1,0 +1,91 @@
+.best-girls
+
+	&__item
+		@include grid-column(3, $neat)
+		margin-bottom: 25px
+		border-radius: 10px
+		box-shadow: 0px 1px 3px 0 rgba(0, 0, 0, 0.25)
+		overflow: hidden
+
+		&:hover
+			box-shadow: 1px 2px 8px 0px rgba(0, 0, 0, 0.50)
+
+		&-img
+			position: relative
+			height: 230px
+			background:
+				repeat: no-repeat
+				size: cover
+				image: url('/images/best-girls/bg1.png')
+			overflow: hidden
+
+		&-button
+			display: flex
+			flex-direction: row
+			flex-wrap: wrap
+			background-image: linear-gradient(to left, #4e92ff, #376cf8), linear-gradient(to right, #000000, #ffffff)
+
+			.btn
+				background-color: transparent
+				width: 50%
+
+				&:focus
+					color: #fff
+					background-color: darken($main-color, 1%)
+					box-shadow: inset 0 0 6px 0px rgba(0, 0, 0, 0.2)
+
+			.btn-fav
+				border-right: 1px solid rgba(255, 255, 255, 0.3)
+
+			i
+				display: inline-block
+				vertical-align: middle
+				margin-right: 10px
+				font-size: 20px
+
+			span
+				display: inline-block
+				vertical-align: middle
+
+		&-footer
+			padding: 10px 17px 20px
+			background-color: #fff
+
+.badge
+	position: absolute
+	top: 20px
+	z-index: 5
+	display: inline-block
+	vertical-align: middle
+	width: 50px
+	height: 30px
+	border-radius: 5px
+	line-height: 30px
+	font-size: 14px
+	color: #fff
+	text-align: center
+
+.badge-like
+	left: 15px
+	background-color: rgba(0, 0, 0, 0.50)
+
+.badge-top
+	right: 20px
+	background-color: $accent-color
+
+.icon-camera
+	margin-right: 5px
+	font-size: 16px
+
+.girl-name
+	display: block
+	margin-top: 10px
+	font-size: 18px
+	font-weight: 500
+	color: $main-color
+	white-space: nowrap
+	letter-spacing: 0.9px
+
+.girl-city
+	font-size: 14px
+	letter-spacing: 0.7px

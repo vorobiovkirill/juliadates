@@ -1,0 +1,87 @@
+.form-group
+	@include grid-column(3, $neat)
+	position: relative
+
+	.label
+		@include grid-column(3, $neat)
+		color: #333333
+		font-size: 16px
+		letter-spacing: 0.8px
+		text-align: left
+
+	.form-range
+		@include grid-column(9, $neat)
+		margin-top: 15px
+
+
+.form-input
+	width: 270px
+	display: inline-block
+
+.form-control
+	width: 100%
+	height: 100%
+	padding: 7px 0
+	border: 0
+	border-bottom: 1px solid #ccc
+	color: #333333
+	font-size: 16px
+	font-weight: $medium
+	line-height: 1.88
+	letter-spacing: 0.8px
+	text-align: left
+
+	~ .focus-border
+		position: absolute
+		bottom: 0
+		left: 0
+		width: 0
+		height: 2px
+		background-color: #3399FF
+		transition: 0.4s
+
+	&:focus ~ .focus-border
+		width: 100%
+		transition: 0.4s
+
+	&.form-select
+		width: 175px
+
+	&.form-input
+		width: 270px
+
+.icon-cancel
+	+position(absolute, 10px 0 null null)
+	font-size: 18px
+	font-weight: $bold
+	color: $main-color
+
+input[type=range]
+	-webkit-appearance: none
+	width: 100%
+	height: 1px
+	border: 1px solid #dcdcdc
+	background-color: $main-color
+
+input[type='range']::-webkit-slider-thumb
+	-webkit-appearance: none
+	background-color: $main-color
+	width: 12px
+	height: 12px
+	border-radius: 10px
+	cursor: pointer
+
+input[type=range]
+
+	&::-moz-range-track
+		height: 1px
+		border: 1px solid #dcdcdc
+		background-color: $main-color
+
+	&::-moz-range-thumb
+		-webkit-appearance: none
+		background-color: $main-color
+		width: 12px
+		height: 12px
+		border-radius: 10px
+		cursor: pointer

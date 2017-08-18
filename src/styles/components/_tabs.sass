@@ -1,0 +1,35 @@
+.tabs
+
+	&__buttons
+		margin-left: 15px
+
+	&__toggle
+		display: inline-block
+		vertical-align: middle
+		width: 135px
+		height: 30px
+		margin-bottom: 30px
+		border: solid 1px $main-color
+		background-color: transparent
+		font-size: 16px
+		font-weight: 500
+		line-height: 1.88
+		letter-spacing: 0.8px
+		text-align: center
+		color: $main-color
+		cursor: pointer
+
+		&_active
+			background-color: $main-color
+			color: #fff
+
+		&:first-child
+			border-right: 0
+			border-top-left-radius: 5px
+			border-bottom-left-radius: 5px
+
+		&:last-child
+			border-left: 0
+			border-top-right-radius: 5px
+			border-bottom-right-radius: 5px
+

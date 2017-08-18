@@ -1,0 +1,49 @@
+.header
+	position: relative
+	width: 100%
+	height: 80px
+	background-color: #ffffff
+	line-height: 80px
+
+	&--logo
+		@include grid-column(2, $neat)
+
+	&--nav
+		@include grid-column(5, $neat)
+		font-size: 16px
+		text-align: left
+		color: $text-color
+
+		.nav-item
+			padding-right: 30px
+
+			&:last-child
+				padding-right: 0
+
+			&.active
+				font-weight: $bold
+
+	&--login
+		@include grid-column(5, $neat)
+		text-align: right
+		font-size: 14px
+
+		.status
+			a
+				padding-left: 15px
+
+				color: $main-color
+
+		.credits
+			margin-left: 20px
+			color: $main-color
+			font-weight: $bold
+
+		.avatar
+			margin-left: 20px
+
+		.dropdown
+			margin-left: 15px
+			font-size: 16px
+			font-weight: $bold
+			color: $main-color

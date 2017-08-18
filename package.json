@@ -1,0 +1,83 @@
+{
+  "name": "webpack-optimized-template",
+  "version": "1.1.1",
+  "description": "Webpack-Optimized-Template",
+  "author": "Kirill Vorobiov",
+  "license": "ISC",
+  "homepage": "https://github.com/vorobyovkirill/Webpack-Optimized-Template#readme",
+  "keywords": [],
+  "engines": {
+    "npm": ">4",
+    "node": ">7"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vorobyovkirill/Webpack-Optimized-Template.git"
+  },
+  "bugs": {
+    "url": "https://github.com/vorobyovkirill/Webpack-Optimized-Template/issues"
+  },
+  "scripts": {
+    "build": "webpack --progress --colors",
+    "clean-install": "rimraf dist node_modules coverage && npm install && npm run build",
+    "lint:css": "sass-lint --verbose",
+    "start": "webpack-dev-server --colors",
+    "watch": "npm run start --progress --colors",
+    "rmrf": "rimraf dist coverage --progress --colors"
+  },
+  "browserslist": [
+    ">1%",
+    "last 4 versions",
+    "Firefox ESR",
+    "not ie < 9"
+  ],
+  "sasslintConfig": ".sass-lint.yml",
+  "dependencies": {
+    "autoprefixer": "^7.1.2",
+    "babel": "^6.23.0",
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.1",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-es2015": "^6.24.1",
+    "future-tabs": "^1.3.2"
+  },
+  "devDependencies": {
+    "assets-webpack-plugin": "^3.5.1",
+    "bourbon": "^4.3.4",
+    "bourbon-neat": "^2.1.0",
+    "copy-webpack-plugin": "^4.0.1",
+    "css-loader": "^0.28.5",
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb-base": "^11.3.1",
+    "eslint-plugin-chai-friendly": "^0.3.6",
+    "eslint-plugin-import": "^2.7.0",
+    "extract-text-webpack-plugin": "^2.1.2",
+    "file-loader": "^0.11.1",
+    "html-elements-webpack-plugin": "^1.0.1",
+    "html-loader": "^0.4.5",
+    "html-webpack-plugin": "^2.30.1",
+    "http-server": "0.10.0",
+    "imagemin-webpack-plugin": "1.4.4",
+    "inline-manifest-webpack-plugin": "^3.0.1",
+    "node-sass": "^4.5.3",
+    "normalize.css": "^7.0.0",
+    "npm-run-all": "4.0.2",
+    "optimize-css-assets-webpack-plugin": "^1.3.2",
+    "postcss-loader": "^2.0.6",
+    "rimraf": "2.6.1",
+    "sass": "^0.5.0",
+    "sass-lint": "1.10.2",
+    "sass-loader": "^6.0.6",
+    "script-ext-html-webpack-plugin": "^1.8.5",
+    "source-map-explorer": "1.3.3",
+    "source-map-loader": "^0.2.1",
+    "style-loader": "^0.18.1",
+    "url-loader": "^0.5.9",
+    "webdriver-manager": "12.0.6",
+    "webpack": "2.6.1",
+    "webpack-dev-server": "2.4.5",
+    "webpack-merge": "4.1.0",
+    "webpack-spritesmith": "0.3.3"
+  }
+}

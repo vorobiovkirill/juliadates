@@ -1,0 +1,17 @@
+{
+  "name": "Gulp Optimized Template",
+  "version": "1.0.0",
+  "description": "Gulp Optimized Template",
+  "authors": [
+    "Kirill Vorobyov <mishkacod@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ],
+  "dependencies": {
+    "jquery": "^3.1.1"
+  }
+}

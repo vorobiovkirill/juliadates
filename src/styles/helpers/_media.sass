@@ -1,0 +1,118 @@
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px)
+	.header
+
+		&--nav
+
+			.nav-item
+				padding-right: 10px
+
+	.top-girls__list
+		justify-content: flex-start
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+	.header
+
+		&--nav
+			display: none
+
+		&--login
+			@include grid-column(10, $neat)
+
+	.best-girls
+
+		&__item
+			@include grid-column(4, $neat)
+
+	.form-group
+		@include grid-column(6, $neat)
+		position: relative
+
+		.label
+			@include grid-column(4, $neat)
+			color: #333333
+			font-size: 16px
+			letter-spacing: 0.8px
+			text-align: left
+
+		.form-range
+			@include grid-column(8, $neat)
+			margin-top: 15px
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+
+	.top-girls
+
+		&__list
+			justify-content: center
+
+	.top-girl
+
+		&__img
+			width: 130px
+			height: 130px
+
+	.best-girls
+
+		&__item
+			@include grid-column(6, $neat)
+
+	.footer
+		text-align: center
+
+		&__links
+			&-item
+				display: block
+				margin-right: 0
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+
+	.top-girl
+
+		&__img
+			width: 120px
+			height: 120px
+
+	.best-girls
+
+		&__item
+			@include grid-column(12, $neat)
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+	/**/
+
+
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+	/**/
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+	/**/
+
