@@ -22,17 +22,18 @@
 
 			<div class="row">
 
-				<a class="header--logo">
+				<a href="/" class="header--logo">
 					<img class="img-fluid" src="images/logo/logo.png" alt="logo" />
 				</a>
 
 				<div class="header--nav">
 					<nav class="navigation" role="navigation">
-						<a href="#" class="nav-item">Поиск</a>
-						<a href="#" class="nav-item">Мои переписки</a>
-						<a href="#" class="nav-item active">Избранное</a>
-						<a href="#" class="nav-item">Кто смотрел</a>
-					</nav>
+						<ul class="nav-list">
+							<li class="nav-item"><a class="nav-link" href="#">Поиск</a></li>
+							<li class="nav-item"><a class="nav-link" href="#">Мои переписки</a></li>
+							<li class="nav-item active"><a class="nav-link" href="#">Избранное</a></li>
+							<li class="nav-item"><a class="nav-link" href="#">Кто смотрел</a></li>
+						</nav>
 				</div>
 
 				<div class="header--login">
@@ -126,29 +127,29 @@
 
 						<div class="row">
 
-						<div class="form-group">
-							<select class="form-control form-select">
-								<option selected value="Девушку">Девушку</option>
-								<option value="Парня">Парня</option>
+							<div class="form-group fg-select">
+								<select class="form-control">
+									<option selected value="Девушку">Девушку</option>
+									<option value="Парня">Парня</option>
+									<span class="focus-border"></span>
+								</select>
+							</div>
+
+							<div class="form-group fg-input">
+								<input type="text" class="form-control" placeholder="Санкт-Петербург">
+								<a href="#"><i class="icon-cancel"></i></a>
 								<span class="focus-border"></span>
-							</select>
-						</div>
+							</div>
 
-						<div class="form-group">
-							<input type="text" class="form-control form-input" placeholder="Санкт-Петербург">
-							<a href="#"><i class="icon-cancel"></i></a>
-							<span class="focus-border"></span>
-						</div>
+							<div class="form-group fg-range">
+								<label class="label" for="ageInputName">Возраст</label>
+								<input type="range" class="form-range" multiple name="ageInputName" id="ageInputId" min="18" max="$age" step="1" value="18" oninput="ageOutputId.value = ageInputId.value">
+								<output name="ageOutputName" id="ageOutputId">18</output>
+							</div>
 
-						<div class="form-group row">
-							<label class="label" for="ageInputName">Возраст</label>
-							<input type="range" class="form-range" multiple name="ageInputName" id="ageInputId" min="18" max="$age" step="1" value="18" oninput="ageOutputId.value = ageInputId.value">
-							<output name="ageOutputName" id="ageOutputId">18</output>
-						</div>
-
-						<div class="form-group text-right">
-							<button type="submit" class="btn btn-submit">Найти</button>
-						</div>
+							<div class="form-group fg-submit">
+								<button type="submit" class="btn btn-submit">Найти</button>
+							</div>
 
 						</div>
 
@@ -251,6 +252,6 @@
 	</footer>
 
 </div>
-
+<div class="scroll"><i class="icon-up"></i></div>
 </body>
 </html>

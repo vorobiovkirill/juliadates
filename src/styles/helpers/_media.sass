@@ -28,20 +28,17 @@
 		&__item
 			@include grid-column(4, $neat)
 
-	.form-group
+	.fg-select
 		@include grid-column(6, $neat)
-		position: relative
 
-		.label
-			@include grid-column(4, $neat)
-			color: #333333
-			font-size: 16px
-			letter-spacing: 0.8px
-			text-align: left
+	.fg-input
+		@include grid-column(6, $neat)
 
-		.form-range
-			@include grid-column(8, $neat)
-			margin-top: 15px
+	.fg-range
+		@include grid-column(6, $neat)
+
+	.fg-submit
+		@include grid-column(6, $neat)
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
@@ -62,10 +59,37 @@
 		&__item
 			@include grid-column(6, $neat)
 
+	.form-group
+
+		.label
+			margin-left: 0
+
+		&:last-child
+			text-align: left
+
+		.btn-submit
+			width: 100%
+
+		.form-control
+			margin-bottom: 10px
+
+	.fg-select
+		@include grid-column(12, $neat)
+
+	.fg-input
+		@include grid-column(12, $neat)
+
+	.fg-range
+		@include grid-column(12, $neat)
+
+	.fg-submit
+		@include grid-column(12, $neat)
+
 	.footer
 		text-align: center
 
 		&__links
+
 			&-item
 				display: block
 				margin-right: 0
@@ -78,6 +102,17 @@
 		&__img
 			width: 120px
 			height: 120px
+
+	.form-group
+		@include grid-column(12, $neat)
+		position: relative
+
+	.tabs
+		text-align: center
+
+		&__toggle
+			width: 95px
+			font-size: 12px
 
 	.best-girls
 

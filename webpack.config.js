@@ -4,11 +4,14 @@ const path = require('path');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const AssetsPlugin = require('assets-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const HtmlElementsWebpackPlugin = require('html-elements-webpack-plugin');
 const ScriptExtHtmlWebpackPlugin = require('script-ext-html-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const ContextReplacementPlugin = require('webpack/lib/ContextReplacementPlugin');
 const SpritesmithPlugin = require('webpack-spritesmith');
+const ImageminPlugin = require('imagemin-webpack-plugin').default
+const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 
 const METADATA = require('./configs/metadata-config');
 
@@ -174,6 +177,30 @@ const config = {
 			},
 			apiOptions: {
 				cssImageRef: '~sprite.[hash].png',
+			},
+		}),
+
+		/**
+		 * @link https://github.com/NMFR/optimize-css-assets-webpack-plugin
+		 */
+		new OptimizeCssAssetsPlugin(),
+
+		/**
+		 * @link https://github.com/Klathmon/imagemin-webpack-plugin
+		 */
+		new ImageminPlugin({
+			test: /\.(jpe?g|png|gif|svg)$/i,
+			pngquant: {
+				quality: '60-70',
+			},
+			optipng: {
+				optimizationLevel: 3,
+			},
+			gifsicle: {
+				optimizationLevel: 1,
+			},
+			jpegtran: {
+				progressive: true,
 			},
 		}),
 

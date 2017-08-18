@@ -1,6 +1,7 @@
 .form-group
-	@include grid-column(3, $neat)
+	@include grid-container
 	position: relative
+	margin-bottom: 10px
 
 	.label
 		@include grid-column(3, $neat)
@@ -13,10 +14,20 @@
 		@include grid-column(9, $neat)
 		margin-top: 15px
 
+	&:last-child
+		text-align: right
 
-.form-input
-	width: 270px
-	display: inline-block
+.fg-select
+	@include grid-column(2, $neat)
+
+.fg-input
+	@include grid-column(3, $neat)
+
+.fg-range
+	@include grid-column(4, $neat)
+
+.fg-submit
+	@include grid-column(3, $neat)
 
 .form-control
 	width: 100%

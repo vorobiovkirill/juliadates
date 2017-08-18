@@ -75,8 +75,14 @@ export const markup = `
 
 			<div class="best-girls__item-button row">
 
-				<button type="button" class="btn btn-fav"><i class="icon-star-empty"></i><span>Избранное</span></button>
-				<button type="button" class="btn btn-chat"><i class="icon-mail-1"></i><span>Написать</span></button>
+				<button type="button" id="favor" class="btn btn-fav">
+					<i class="icon-star-empty"></i>
+					<span>Избранное</span>
+				</button>
+				<button type="button" class="btn btn-chat">
+					<i class="icon-mail-1"></i>
+					<span>Написать</span>
+				</button>
 
 			</div>
 

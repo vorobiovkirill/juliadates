@@ -413,7 +413,6 @@ __pycache__/
 
 app/
 build/
-dist/
 resources/
 
 # Sprites
